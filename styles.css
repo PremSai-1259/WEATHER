@@ -1,0 +1,45 @@
+#start{
+    display: block;
+    position: relative;
+    margin-top: 300px;
+    margin-left: 500px;
+    margin-right: 500px;
+    text-align: center;
+    padding-bottom: 8px;
+}
+
+h1{
+    text-align: center;
+}
+
+body{
+    background-color: rgb(151, 228, 227);
+}
+
+button:hover{
+    cursor: pointer;
+    background-color:  rgb(151, 228, 227);
+    color: black;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    border-radius: 10px;
+}
+
+#results{
+    position: relative;
+    margin-top: 20px;
+    margin-left: 550px;
+    margin-right: 550px;
+    padding-left: 10px;
+    text-align: left;
+    height: 150px;
+    padding-top: 50px;
+    background-color: aliceblue;
+}
+
+#convert{
+    position: absolute;
+    margin-left: 900px;
+    margin-top: -130px;
+}
