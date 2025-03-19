@@ -13,7 +13,8 @@ h1{
 }
 
 body{
-    background-color: rgb(151, 228, 227);
+    background-image: url("back.jpg") ;
+    background-size: cover;
 }
 
 button:hover{
