@@ -13,6 +13,16 @@ async function infor()
         document.getElementById("windvel").innerHTML=`${result.current.wind_mph} mph`;
         document.getElementById("tex").innerHTML=result.current.condition.text;
     }
+    var access_key="8mKM_ul1hJmIAZPacZJjXZdeRpZlp1tEtdrG60dQINA";
+    var ans = await fetch(`https://api.unsplash.com/photos/random?query=${city}&orientation=landscape`, {
+            headers: {
+                Authorization: `Client-ID ${access_key}`
+            }
+        });
+    var data = await ans.json();
+    console.log(data.urls.full);
+    var back = document.querySelector("body");
+    back.style.backgroundImage=`url(${data.urls.full})`
 }
 
 async function ct(){
