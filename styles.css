@@ -28,13 +28,13 @@ button:hover{
 
 #results{
     position: relative;
-    margin-top: 20px;
+    margin-top: 2px;
     margin-left: 550px;
     margin-right: 550px;
     padding-left: 10px;
     text-align: left;
-    height: 150px;
-    padding-top: 50px;
+    height: 55px;
+    padding-top: 2px;
     background-color: aliceblue;
 }
 
@@ -42,4 +42,10 @@ button:hover{
     position: absolute;
     margin-left: 900px;
     margin-top: -130px;
+}
+
+#abc{
+    display: inline-block;
+    margin-left: 550px;
+    margin-top: 3px;
 }

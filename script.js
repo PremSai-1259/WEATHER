@@ -13,3 +13,10 @@ async function infor()
         document.getElementById("windvel").innerHTML=result.current.wind_mph +"mph";
     }
 }
+
+function ct(){
+    document.getElementById("temp").innerHTML=result.current.temp_f +"F";
+}
+function cw(){
+    document.getElementById("windvel").innerHTML=result.current.wind_kph +"kmph";
+}
