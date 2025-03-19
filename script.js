@@ -20,7 +20,6 @@ async function infor()
             }
         });
     var data = await ans.json();
-    console.log(data.urls.full);
     var back = document.querySelector("body");
     back.style.backgroundImage=`url(${data.urls.full})`;
 }
