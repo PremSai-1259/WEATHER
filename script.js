@@ -37,6 +37,3 @@ async function cw(){
         alert("ENTER THE CITY NAME")
     }
 }
-function remove(){
-    document.getElementById("place").value.remove();
-}
