@@ -14,16 +14,24 @@ async function infor()
     }
 }
 
-function ct(){
-    if(result)
-    document.getElementById("temp").innerHTML=`${result.current.temp_f}F`;
+async function ct(){
+    var city=document.getElementById("place").value;
+    if(city.length>0){
+        var url = await fetch(`https://api.weatherapi.com/v1/current.json?q=${city}&key=3c004e1464a84e97bb5181340251603`);
+        var result = await url.json();
+        document.getElementById("temp").innerHTML=`${result.current.temp_f}F`;
+    }
     else{
         alert("ENTER THE CITY NAME")
     }
 }
-function cw(){
-    if(result)
-    document.getElementById("windvel").innerHTML=`${result.current.wind_kph} kph`;
+async function cw(){
+    var city=document.getElementById("place").value;
+    if(city.length>0){
+        var url = await fetch(`https://api.weatherapi.com/v1/current.json?q=${city}&key=3c004e1464a84e97bb5181340251603`);
+        var result = await url.json();
+        document.getElementById("windvel").innerHTML=`${result.current.wind_kph} kph`;
+    }
     else{
         alert("ENTER THE CITY NAME")
     }
