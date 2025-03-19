@@ -11,6 +11,7 @@ async function infor()
         document.getElementById("time").innerHTML=result.location.localtime;
         document.getElementById("temp").innerHTML=`${result.current.temp_c } C`;
         document.getElementById("windvel").innerHTML=`${result.current.wind_mph} mph`;
+        document.getElementById("tex").innerHTML=result.current.condition.text;
     }
 }
 
