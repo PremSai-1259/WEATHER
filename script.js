@@ -6,7 +6,7 @@ async function infor()
         alert("PLEASE ENTER CITY");
     }
     else{
-        var url = await fetch('http://api.weatherapi.com/v1/current.json?key=3c004e1464a84e97bb5181340251603&q=${city}&aqi=yes');
+        var url = await fetch('https://api.weatherapi.com/v1/current.json?q=${city}&key=3c004e1464a84e97bb5181340251603');
         var result = await url.json();
         document.getElementById("time").innerHTML=result.location.localtime;
         document.getElementById("temp").innerHTML=result.current.temp_c +"C";
