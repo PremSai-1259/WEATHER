@@ -18,5 +18,5 @@ function ct(){
     document.getElementById("temp").innerHTML=result.current.temp_f +"F";
 }
 function cw(){
-    document.getElementById("windvel").innerHTML=result.current.wind_kph +"kmph";
+    document.getElementById("windvel").innerHTML=result.current.wind_kph +"kph";
 }
