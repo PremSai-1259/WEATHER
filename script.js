@@ -12,19 +12,19 @@ async function infor()
         document.getElementById("temp").innerHTML=`${result.current.temp_c } C`;
         document.getElementById("windvel").innerHTML=`${result.current.wind_mph} mph`;
     }
-    function ct(){
-        if(result)
-        document.getElementById("temp").innerHTML=`${result.current.temp_f}F`;
-        else{
-            alert("ENTER THE CITY NAME")
-        }
-    }
-    function cw(){
-        if(result)
-        document.getElementById("windvel").innerHTML=`${result.current.wind_kph} kph`;
-        else{
-            alert("ENTER THE CITY NAME")
-        }
-    }
 }
 
+function ct(){
+    if(result)
+    document.getElementById("temp").innerHTML=`${result.current.temp_f}F`;
+    else{
+        alert("ENTER THE CITY NAME")
+    }
+}
+function cw(){
+    if(result)
+    document.getElementById("windvel").innerHTML=`${result.current.wind_kph} kph`;
+    else{
+        alert("ENTER THE CITY NAME")
+    }
+}
