@@ -47,6 +47,12 @@ button:hover{
 
 #abc{
     display: inline-block;
-    margin-left: 550px;
+    margin-left: 565px;
     margin-top: 3px;
+}
+
+#res{
+    display: block;
+    margin-top: 10px;
+    margin-left: 680px;
 }
