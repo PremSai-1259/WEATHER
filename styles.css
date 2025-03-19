@@ -19,8 +19,8 @@ body{
 
 button:hover{
     cursor: pointer;
-    background-color:  rgb(151, 228, 227);
-    color: black;
+    background-color:  black;
+    color: white;
     border-style: solid;
     border-width: 2px;
     border-color: black;
