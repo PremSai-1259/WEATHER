@@ -13,7 +13,7 @@ async function infor()
         document.getElementById("windvel").innerHTML=`${result.current.wind_mph} mph`;
         document.getElementById("tex").innerHTML=result.current.condition.text;
     }
-    var access_key="8mKM_ul1hJmIAZPacZJjXZdeRpZlp1tEtdrG60dQINA";
+    var access_key="uT1cnE61-RP6dnOfQzhuHPJeAOP5d7-T53idCNteM5o";
     var ans = await fetch(`https://api.unsplash.com/photos/random?query=${city}&orientation=landscape`, {
             headers: {
                 Authorization: `Client-ID ${access_key}`
